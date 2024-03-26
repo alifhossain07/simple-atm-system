@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200">
+    <div class="container mx-auto mt-10">
+        <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden md:max-w-lg">
+            <div class="md:flex">
+                <div class="w-full p-4">
+                    <h2 class="text-center text-3xl font-semibold mb-4">ATM System</h2>
+                    <form id="atmForm" class="space-y-6">
+                        <!-- Account Number and PIN input fields -->
+                        <!-- Login Button -->
+                    </form>
+                    <!-- ATM Interface -->
+                    <div id="interface" class=" mt-6">
+                        <!-- ATM actions and display -->
+                        <div class="flex justify-between items-center mb-4">
+                            <button id="withdrawBtn" class="bg-blue-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Withdraw</button>
+                            <button id="depositBtn" class="bg-green-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-green-600 focus:outline-none focus:bg-green-600">Deposit</button>
+                            <button id="balanceBtn" class="bg-yellow-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600">Check Balance</button>
+                            <button id="logoutBtn" class="bg-red-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-red-600 focus:outline-none focus:bg-red-600">Logout</button>
+                        </div>
+                        <div id="display" class="bg-gray-100 p-4 rounded-lg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- javaScript code for handling ATM actions -->
+
+    <script>
+       document.getElementById('withdrawBtn').addEventListener('click', function() {
+  window.location.href = 'withdraw.html';
+});
+document.getElementById('depositBtn').addEventListener('click', function() {
+  window.location.href = 'deposit.html';
+});
+document.getElementById('balanceBtn').addEventListener('click', function() {
+  window.location.href = 'balance-check.html';
+});
+
+
+    </script>
+</body>
+</html>
